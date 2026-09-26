@@ -1,7 +1,6 @@
 import { IGit } from './IGit';
 import tl = require('azure-pipelines-task-lib/task');
 import tr = require('azure-pipelines-task-lib/toolrunner');
-import fs = require('fs');
 import path = require('path');
 import events = require('events');
 import os = require('os');
