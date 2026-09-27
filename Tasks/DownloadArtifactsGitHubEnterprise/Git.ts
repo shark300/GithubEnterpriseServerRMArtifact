@@ -180,7 +180,7 @@ export class Git extends events.EventEmitter implements IGit {
       ignoreReturnCode: false,
       windowsVerbatimArguments: false,
     };
-    return git.exec(options);
+    return git.execAsync(options);
   }
 
   private execSync(args: Array<string>): tr.IExecSyncResult {
