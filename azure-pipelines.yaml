@@ -6,8 +6,8 @@ trigger:
 pr:
   - master
 variables:
-  MajorVersion : 1
-  MinorVersion : 1
+  MajorVersion : 2
+  MinorVersion : 0
   PatchVersion : $[counter(format('ghe-extension-{0}.{1}.{2}',variables['Build.SourceBranchName'],variables['MajorVersion'],variables['MinorVersion']), 0)]
   isPR : $[startsWith(variables['Build.SourceBranch'],'refs/pull/')] 
   isMain : $[startsWith(variables['Build.SourceBranch'],'refs/heads/master')] 
